@@ -2882,7 +2882,7 @@ var _getItemAt,
 		}
 
 		if(!img) {
-			if(typeof item.container === 'undefined'){
+			if(typeof item.container === 'undefined' || item.container === null){
 				return;
 			}
 			img = item.container.lastChild;
